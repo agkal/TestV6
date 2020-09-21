@@ -70,3 +70,54 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+# Abdul Ghaffar started changing here
+
+Copy SSH key
+--By this command, in your terminal, you can copy your ssh key to your clipboard:
+open git bash:
+	ssh-keygen
+
+
+		repository push or pull guidelines
+------------------------------------------------------------------------
+…or create a new repository on the command line
+
+echo "# TestV6" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/agkal/TestV6.git
+git push -u origin master
+                
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/agkal/TestV6.git
+git branch -M master
+git push -u origin master
+
+---------------------------------------------------------------------------------
+		Series vise commands to push the project
+-first of all go to the project:
+
+git init
+
+git add .
+
+git commit -m"init"
+
+git remote add origin https://github.com/agkal/TestV6.git
+
+git push -u origin master
+
+-to change any folder and then push::
+
+git status
+
+git add .
+
+git commit -m"Changed read me file by adding my code lines"
+
+git push
