@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,6 +16,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('/upload', function (Request $request) {
+    dd($request -> file("thing") -> store("", 'google'));
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
